@@ -10,12 +10,12 @@ import './App.css';
 
 const App = () => {
   return (
-    <Box width='500px'>
+    <Box width='500px' sx={{ width: {xl:'1400px'} }} m='auto'>
       <Navbar />
 
       <Routes>
-        <Route path='/' element={Home />} />
-        <Route path='/exercise:id' element={ExerciseDetail />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/exercise:id' element={<ExerciseDetail />} />
       </Routes>
 
       <Footer />
