@@ -10,7 +10,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Box width='500px' sx={{ width: {xl:'1400px'} }} m='auto'>
+    <Box width='500px' sx={{ width: {xl:'1400px'} }} m='auto' backgroundColor='wheat'>
       <Navbar />
 
       <Routes>
