@@ -5,12 +5,39 @@ import { exerciseOptions, fetchData } from '../utils/fetchAPIData';
 const SearchExercises = () => {
 
   const [search, setSearch] = useState('');
+  const [exercises, setExercises] = useState([]);     // display searched
+  const [bodyParts, setBodyParts] = useState([]);     // display categories
+
+
+  // Display category through body part list
+  useEffect(() => {
+    const fetchExerciseData = async () => {
+      const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
+      setBodyParts(['all', ... bodyPartsData]);
+    }
+    fetchExerciseData();
+  }, []);
+
+
+  // Search Bar
   const handleSearch = async ()=> {
     if(search){
-      const exerciseData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
-      console.log(exerciseData)
+      const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+      //console.log(exerciseData)
+
+      // Search functionality based on four criterias
+      const searchedExercises = exercisesData.filter(
+        (exercise) => exercise.name.toLowerCase().includes(search)
+        || exercise.bodyPart.toLowerCase().includes(search)
+        || exercise.target.toLowerCase().includes(search)
+        || exercise.equipment.toLowerCase().includes(search)
+      );
+
+      setSearch('')                         // clears searchbar after user input
+      setExercises(searchedExercises);      // displays search input
     }
   }
+
 
   return (
     <Stack alignItems='center' mt='37px' justifyContent='center' p='20px'>
