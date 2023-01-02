@@ -1,10 +1,30 @@
 import React from 'react';
 import { Stack, Typography } from '@mui/material';
 
-const BodyPart = () => {
+const BodyPart = ({ item, bodyPart, setBodyPart }) => {
   return (
-    <Stack>
-      <img src='' alt='icon' className='body-part-icon' />
+    <Stack
+      type='button'
+      alignItems='center'
+      justifyContent='center'
+      className='bodyPart-card'
+      sx={{
+          borderTop: '4px solid crimson',
+          background:'palevioletred',
+          borderBottomLeftRadius:'20px',
+          width:'250px',
+          height:'250px',
+          cursor:'pointer',
+          gap:'20px'
+        }
+      }
+    >
+      <img src='https://img.icons8.com/emoji/96/null/construction-emoji.png' alt='icon'
+      style={{ width:'40px', height:'40px'}}
+      />
+      <Typography fontSize='25px' fontWeight='bold' color='purple' textTransform='capitalize'>
+        {item}
+      </Typography>
       <p>Exercise</p>
       <br />
     </Stack>

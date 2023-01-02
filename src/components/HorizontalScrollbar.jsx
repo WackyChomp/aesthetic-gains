@@ -1,12 +1,13 @@
 import React from 'react';
 import { Box } from '@mui/material';
+import { ScrollMenu } from 'react-horizontal-scrolling-menu';
 import BodyPart from './BodyPart';
 
 
 // Display each category as cards
 const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
   return (
-    <div>
+    <ScrollMenu>
       {data.map((item) => (
         <Box
           key={ item.id || item}
@@ -20,7 +21,7 @@ const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
             />
         </Box>
       ))}
-    </div>
+    </ScrollMenu>
   )
 }
 
