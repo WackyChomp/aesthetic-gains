@@ -9,15 +9,15 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
       justifyContent='center'
       className='bodyPart-card'
       sx={{
-          borderTop: '4px solid crimson',
+          borderTop: '10px solid crimson',
           background:'palevioletred',
-          borderBottomLeftRadius:'20px',
+          borderRadius:'20px',
           width:'250px',
           height:'250px',
           cursor:'pointer',
-          gap:'20px'
-        }
-      }
+          gap:'20px',
+          margin:'15px'
+      }}
     >
       <img src='https://img.icons8.com/emoji/96/null/construction-emoji.png' alt='icon'
       style={{ width:'40px', height:'40px'}}
