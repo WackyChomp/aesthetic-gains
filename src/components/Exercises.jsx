@@ -2,6 +2,7 @@ import React, { useEffect, useState} from 'react';
 import { Pagination } from '@mui/material';
 import { Box, Stack, Typography } from '@mui/material';
 import { exerciseOptions, fetchData } from '../utils/fetchAPIData';
+import ExerciseCard from './ExerciseCard';
 
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
@@ -21,7 +22,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       justifyContent='center'
       >
         {exercises.map((exercise, index) => (
-          <p>{exercise.name}</p>
+          <ExerciseCard exercise={exercise} key={index} />
         ))}
       </Stack>
     </Box>
