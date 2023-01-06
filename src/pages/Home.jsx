@@ -8,6 +8,8 @@ const Home = () => {
   const [bodyPart, setBodyPart] = useState(['all']);  // displayed through different components
   const [exercises, setExercises] = useState([]);     // display searched
 
+  console.log(bodyPart)
+  
   return (
     <Box>
       <HeroBanner />
@@ -19,7 +21,7 @@ const Home = () => {
       <Exercises 
         exercises={exercises}
         setExercises={setExercises}
-        setBodyPart={setBodyPart}
+        bodyPart={bodyPart}
       />
     </Box>
   )
