@@ -10,6 +10,22 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   console.log(exercises)
 
 
+    useEffect(() => {
+    const fetchExercisesData = async () => {
+      let exercisesData = [];
+
+      if (bodyPart === 'all'){
+        exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+      } else{
+        exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions);
+      }
+
+      setExercises(exercisesData);
+    };
+
+    fetchExercisesData();
+  }, [bodyPart]); 
+
   //Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
@@ -29,7 +45,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
       {/* Header for results showing */}      
       <Typography variant='h3' mb='48px'>
-        Showing Them Results
+        Showing Them Results:
       </Typography>
 
       {/* Displaying cards from ExerciseCard component */}

@@ -20,6 +20,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
       }}
       onClick={ ()=>{
         setBodyPart(item);
+        window.scrollTo({ top:2000, left:100, behavior:'smooth' })    // scrolls down to exercises below when body part is selected from category 
       }}
     >
       <img src='https://img.icons8.com/emoji/96/null/construction-emoji.png' alt='icon'

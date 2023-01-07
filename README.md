@@ -9,6 +9,8 @@ WIP Name
     <img src="./src/assets/img/logo-color.svg" alt="Logo" width="80" height="80">
     <img src="./src/assets/img/logo-white.svg" alt="Logo" width="80" height="80">
     <img src="./src/assets/img/logo-no-background.svg" alt="Logo" width="80" height="80">
+    <img src="./src/assets/img/logo-orange-no-background.svg" alt="Logo" width="80" height="80">
+    
   </a>
 
   <h3 align="center">Aesthetic Gains</h3>
