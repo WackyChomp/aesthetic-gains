@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
-import Logo from '../assets/img/aesthetic-gains-logo.png';
+import Logo from '../assets/img/logo-no-background2.png';
 
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
     direction='row' justifyContent='space-around' px='20px'
     sx={{ gap:{sm:'130px', xs:'50px'}, mt:{sm:'32px', xs:'20px'}, justifyContent:'none' }} >
       <Link to='/'>
-        <img src={Logo} style={{ width:'70px', height:'70px', margin:'0 20px' }}/>
+        <img src={Logo} style={{ width:'100px', height:'70px', margin:'0 20px' }}/>
       </Link>
       <Stack direction='row' gap='40px' fontSize='30px' alignItems='flex-end'>
         <Link to='/' style={{ textDecoration:'none', color:'#3A1212', borderBottom:'5px solid #FF2625' }}>Home</Link>

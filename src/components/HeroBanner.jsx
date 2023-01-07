@@ -26,7 +26,7 @@ const HeroBanner = () => {
 
       <Typography
       fontWeight={600}
-      color='magenta'
+      color='orangered'
       sx={{
         opacity: 0.4,
         display: { lg:'block', xs:'none'}

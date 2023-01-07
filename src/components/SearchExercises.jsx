@@ -41,7 +41,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   return (
     <Stack alignItems='center' mt='37px' justifyContent='center' p='20px'>
-      <Typography fontWeight={700} sx={{ fontSize:{ lg:'45px', xs:'30px' } }} mb='50px' textAlign='center'>
+      <Typography fontWeight={700} sx={{ fontSize:{ lg:'45px', xs:'30px' } }} mb='20px' textAlign='center'>
         Exercises For All Levels
       </Typography>
 
@@ -76,6 +76,9 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       </Box>
 
       <Box sx={{ position:'relative', width:'100%', p:'20px' }}>
+        <Typography fontWeight={700} sx={{ fontSize:{ lg:'45px', xs:'30px' } }} mb='20px' textAlign='center'>
+          Body Part Categories
+        </Typography>
         <HorizontalScrollbar 
           data={bodyParts} 
           bodyPart={bodyPart}         // from Home Page
