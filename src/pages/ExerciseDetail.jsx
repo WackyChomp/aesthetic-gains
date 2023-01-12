@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { Box } from '@mui/material';
 import { exerciseOptions, fetchData } from '../utils/fetchAPIData';
 import Detail from '../components/Detail';
+import ExerciseVideos from '../components/ExerciseVideos';
+import SimilarExercises from '../components/SimilarExercises';
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
@@ -25,6 +27,8 @@ const ExerciseDetail = () => {
   return (
     <Box>
       <Detail exerciseDetail={exerciseDetail} />
+      <ExerciseVideos />
+      <SimilarExercises />
     </Box>
   )
 }
