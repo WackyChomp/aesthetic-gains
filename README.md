@@ -59,14 +59,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+When it comes to body fitness, there's a broad spectrum ranging from beginners to seasoned people. With the power of the internet, we open the floodgates to information and it can be overwhelming at times.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+This app allows you direct access to quick and correct information needed identify the proper exercise for your fitness goals.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Here's Why:
+* Brief synopsis of exercise along with video demonstrations to execute safely
+* Exercisedb API offers the latest and up-to-date exercise information.
+* Using a search engine can be cumbersome given the vast information presented to us. Avoid paralysis by analysis and resume workout
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -79,9 +79,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [![React][React.js]][React-url]
 * [![Material-UI][Material-UI]][Material-UI-url]
-* [![Next][Next.js]][Next-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![HTML][HTML]][HTML-url]
+* [![CSS][CSS]][CSS-url]
+* [![Netlify][Netlify]][Netlify-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,6 +150,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [ ] Multi-language Support
     - [ ] ???
+- [ ] Bookmark exercises
 
 See [open issues](https://github.com/WackyChomp/aesthetic-gains/issues) for a full list of proposed features and known issues.
 
@@ -244,3 +245,13 @@ https://www.markdownguide.org/basic-syntax/#reference-style-links
 
 [Material-UI]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
 [Material-UI-url]: https://mui.com/
+
+
+[Netlify]: https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white
+[Netlify-url]: https://www.netlify.com/
+
+[HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://en.wikipedia.org/wiki/HTML
+
+[CSS]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[CSS-url]: https://en.wikipedia.org/wiki/CSS
