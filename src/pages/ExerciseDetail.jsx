@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box } from '@mui/material';
-import { exerciseOptions, fetchData } from '../utils/fetchAPIData';
+import { exerciseOptions, fetchData, youtubeOptions } from '../utils/fetchAPIData';
 import Detail from '../components/Detail';
 import ExerciseVideos from '../components/ExerciseVideos';
 import SimilarExercises from '../components/SimilarExercises';
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
+  const [exerciseVideos, setExerciseVideos] = useState([]);
   const { id } = useParams();     // exercise associated to id number
 
   
@@ -19,6 +20,9 @@ const ExerciseDetail = () => {
       const exerciseDetailData = await fetchData(`${exerciseDBUrl}/exercises/exercise/${id}`, exerciseOptions)
       console.log({exerciseDetailData});
       setExerciseDetail(exerciseDetailData);
+
+      const exerciseVideoData = await fetchData(`${youtubeSearchUrl}/search?q=${exerciseDetailData.name}`, youtubeOptions)
+      setExerciseVideos(exerciseVideoData);
     }
 
     fetchExerciseData();
