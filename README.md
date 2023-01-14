@@ -57,7 +57,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- WIP images -->
+[![Product Name Screen Shot 1][Hero-Banner]](https://example.com)
+[![Product Name Screen Shot 2][homepage]](https://example.com)
 
 When it comes to body fitness, there's a broad spectrum ranging from beginners to seasoned people. With the power of the internet, we open the floodgates to information and it can be overwhelming at times.
 
@@ -229,7 +231,8 @@ https://www.markdownguide.org/basic-syntax/#reference-style-links
 [![LinkedIn][linkedin-shield]][linkedin-url]
 -->
 
-[product-screenshot]: images/screenshot.png
+[Hero-Banner]: ./src\assets\img\banner-image.png
+[Homepage]: ./src\assets\img\homepage.png
 
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
