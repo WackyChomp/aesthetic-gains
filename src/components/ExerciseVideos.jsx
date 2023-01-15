@@ -3,6 +3,7 @@ import { Box, Stack, Typography } from '@mui/material';
 
 const ExerciseVideos = ({ exerciseVideos, name }) => {
 
+  console.log(exerciseVideos);
 
   {/* test case dealing with undefine or not being populated */}
   if(!exerciseVideos.length) return 'Loading . .. ...';
@@ -17,11 +18,11 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
       sx={{ flexDirection:{lg:'row'}, gap:{lg:'110px', xs:'0'} }} >
 
         {/* loops through videos from useState in ExerciseDetail component to display */}
-        {exerciseVideos?.slice(0,5).map((item,index)=>(
+        {exerciseVideos?.slice(0,5).map((item,index)=>(     // two videos go off screen
           <a key={index} className='exercise-video'
           href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
           target='blank' rel='noreferrer' >
-            <img src={item.video.thumbnail[0].url} alt={item.video.title} />
+            <img src={item.video.thumbnails[0].url} alt={item.video.title} />
           </a>
         ))}
 
