@@ -58,12 +58,12 @@
 ## About The Project
 
 <!-- WIP images -->
-[![Product Name Screen Shot 1][Hero-Banner]](https://example.com)
-[![Product Name Screen Shot 2][homepage]](https://example.com)
+![Product Name Screen Shot 1][Hero-Banner]
+![Product Name Screen Shot 2][homepage]
 
 When it comes to body fitness, there's a broad spectrum ranging from beginners to seasoned people. With the power of the internet, we open the floodgates to information and it can be overwhelming at times.
 
-This app allows you direct access to quick and correct information needed identify the proper exercise for your fitness goals.
+This app provides direct access to quick and correct information needed to identify the proper exercises for your fitness goals.
 
 Here's Why:
 * Brief synopsis of exercise along with video demonstrations to execute safely
@@ -144,7 +144,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Finalize logo design
 - [ ] Finalize color themes
 - [x] Connect to exercisedb API
-- [ ] Connect to YouTube API
+- [x] Connect to YouTube API
 - [ ] Adding comments to identify what each component does
 - [ ]
 
@@ -152,7 +152,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [ ] Multi-language Support
     - [ ] ???
-- [ ] Bookmark exercises
+- [ ] Bookmark exercises ???
 
 See [open issues](https://github.com/WackyChomp/aesthetic-gains/issues) for a full list of proposed features and known issues.
 
