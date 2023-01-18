@@ -83,6 +83,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           data={bodyParts} 
           bodyPart={bodyPart}         // from Home Page
           setBodyPart={setBodyPart}  // from Home Page
+          isBodyParts                 // from HorizontalScrollbar component
         />
       </Box>
     </Stack>
