@@ -231,8 +231,8 @@ https://www.markdownguide.org/basic-syntax/#reference-style-links
 [![LinkedIn][linkedin-shield]][linkedin-url]
 -->
 
-[Hero-Banner]: ./src\assets\img\banner-image.png
-[Homepage]: ./src\assets\img\homepage.png
+[Hero-Banner]: /src/assets/img/banner-image.png
+[Homepage]: /src/assets/img/homepage.png
 
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
