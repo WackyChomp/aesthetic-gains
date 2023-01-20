@@ -4,10 +4,9 @@
 <br />
 <div align="center">
   <a href="https://github.com/WackyChomp/aesthetic-gains">
-    <img src="./src/assets/img/logo-color.svg" alt="Logo" width="80" height="80">
-    <img src="./src/assets/img/logo-orange-no-background3.svg" alt="Logo" width="80" height="80">
     <img src="./src/assets/img/logo-orange-no-background.svg" alt="Logo" width="80" height="80">
     <img src="./src/assets/img/logo-orange-no-background2.svg" alt="Logo" width="80" height="80">
+    <img src="./src/assets/img/logo-orange-no-background3.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Aesthetic Gains</h3>
